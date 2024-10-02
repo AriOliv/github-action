@@ -11,5 +11,4 @@ LABEL "com.github.actions.icon"="zap"
 LABEL "com.github.actions.color"="red"
 
 RUN npm i -g serverless@4.x
-RUN apt-get -qq upgrade -y python3
 ENTRYPOINT ["serverless"]
