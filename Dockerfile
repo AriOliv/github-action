@@ -11,8 +11,7 @@ LABEL "com.github.actions.icon"="zap"
 LABEL "com.github.actions.color"="red"
 
 # Instala o Git e o Serverless
-RUN apt-get update && apt-get install -y git && \
-    npm install -g serverless@4.x
+RUN apt-get update && apt-get install -y git
     
 RUN npm i -g serverless@4.x
 ENTRYPOINT ["serverless"]
