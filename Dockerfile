@@ -11,4 +11,4 @@ LABEL "com.github.actions.icon"="zap"
 LABEL "com.github.actions.color"="red"
 
 RUN npm i -g serverless@4.x
-ENTRYPOINT ["sudo serverless"]
+ENTRYPOINT ["serverless"]
