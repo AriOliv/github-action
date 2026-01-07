@@ -13,7 +13,7 @@ LABEL "com.github.actions.color"="red"
 # Instala o Git e o Serverless
 RUN apt-get update && apt-get install -y git
 RUN curl -fsSL https://get.docker.com -o get-docker.sh
-RUN sudo sh get-docker.sh
+RUN sh get-docker.sh
     
 RUN npm i -g serverless@4.x
 ENTRYPOINT ["serverless"]
